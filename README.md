@@ -23,4 +23,5 @@ steps:
   inputs:
     command: 'test'
     projects: '**/*Tests.csproj'
+    
     ```
