@@ -22,6 +22,5 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: 'test'
-    projects: '**/*Tests.csproj'
-    
-    ```
+    projects: '**/*Tests.csproj' 
+```
