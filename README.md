@@ -1,6 +1,6 @@
 # AzureDevOpsPipeline
-Testiranje Azure DevOps Pipelines mogućnosti
-Sastoji se od jednog WebApi ASP.NET projekta i jednog NUnit Test projekta.
+Sastoji se od jednog WebApi ASP.NET projekta i jednog NUnit Test projekta. Imaju dva test case-a od kojih jedan je fail zbog namjernog bug-a unutar Oduzmi metode Digitron klase.
+
 Ispod je yaml file za Pipeline na Azure DevOps
 ```
 trigger:
