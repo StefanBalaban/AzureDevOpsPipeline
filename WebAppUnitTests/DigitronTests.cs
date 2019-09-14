@@ -9,14 +9,27 @@ namespace WebAppUnitTests
     [TestFixture]
     class DigitronTests
     {
+        private Digitron _digitron;
+
+        [SetUp]
+        public void Setup()
+        {
+            _digitron = new Digitron();
+        }
         [Test]
         public void Saberi_PozvanSaDvaDva_VratiCetiri()
         {
-            var digitron = new Digitron();
-
-            var cetiri = digitron.Saberi(2, 2);
+            var cetiri = _digitron.Saberi(2, 2);
 
             Assert.That(cetiri, Is.EqualTo(4));
         }
+        [Test]
+        public void Oduzmi_PozvanSaDvaTri_VratiMinus()
+        {
+            var minusJedan = _digitron.Oduzmi(2, 3);
+
+            Assert.That(minusJedan, Is.EqualTo(-1));
+        }
+       
     }
 }
